@@ -62,44 +62,7 @@ const Footer = () => {
               </li>
             </ul>
 
-            <h3 className="text-lg font-semibold mt-[312px] mb-4">Company</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Mission and values
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  International presence
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Management team
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Corporate social responsibility
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Industry contribution
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Our clients and awards
-                </a>
-              </li>
-            </ul>
+           
           </div>
 
           {/* Expertises Column */}
@@ -168,92 +131,8 @@ const Footer = () => {
                 </ul>
               )}
             </div>
-            <div>
-              <h3 className="text-lg mt-32 font-semibold mb-4">
-                Kickass solution hub
-              </h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Kickass IoT Accelerator
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Kickass ERP system
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Kickass Payments
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    An AI-powered virtual assistant
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    DevOps Accelerator
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Authorization Accelerator
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    uCrop
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <h3 className="text-lg font-semibold mt-16 mb-4">X-Quality</h3>
-            <h3 className="text-lg font-semibold mt-8 mb-4">Insights</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  FinTech
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Healthcare
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Transportation and mobility
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Manufacturing
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Smart Home and appliances
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Energy and resources
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Real estate
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  All articles
-                </a>
-              </li>
-            </ul>
+            
+           
           </div>
 
           {/* Yalantis Solution Hub Column */}

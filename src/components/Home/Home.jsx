@@ -11,6 +11,7 @@ import CombinedTechNav from "../Pages/technologies";
 import LatestInsights from "../Pages/latestInsights";
 import FAQSection from "../Pages/faqSection";
 import Hyperspeed from "../Backgrounds/Hyperspeed/Hyperspeed";
+import Carousel from "../Pages/featuredProjects";
 
 function Home() {
   const effectOptions = {
@@ -63,13 +64,13 @@ function Home() {
         {/* Hero Content */}
         <div className="relative  z-10 h-full">
           <main className="px-6 py-40 max-w-6xl mx-auto text-center">
-           {/* Added backdrop-blur and background for better text readability */}
+            {/* Added backdrop-blur and background for better text readability */}
             <div className="backdrop-blur-[1.5px] bg-gray/30 p-8 -mt-10 rounded-lg">
               <h1 className="text-5xl font-bold mt-8 leading-tight mb-6 text-white drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
                 ReactJS Development Company: Build Modern, High-Performance Web
                 Applications
               </h1>
-           <p className="text-xl text-gray-100 mb-8 drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]">
+              <p className="text-xl text-gray-100 mb-8 drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]">
                 Elevate your user experience with our expert ReactJS development
                 solutions.
               </p>
@@ -77,23 +78,22 @@ function Home() {
               <p className="text-gray-100 mb-12 text-xl max-w-4xl mx-auto drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]">
                 Looking for a dynamic and engaging web presence? Our expert
                 ReactJS developers build high-performance, scalable, and
-                user-friendly web applications tailored to your specific business
-                needs. We leverage the power of ReactJS to deliver exceptional
-                user experiences that drive results.
+                user-friendly web applications tailored to your specific
+                business needs. We leverage the power of ReactJS to deliver
+                exceptional user experiences that drive results.
               </p>
 
-            <div className="flex justify-center space-x-4">
-              <button className="px-8 py-3 bg-orange-500 text-gray-900 rounded-md font-bold hover:bg-orange-600 transition-colors duration-300">
-                Get started
-              </button>
-              <button className="px-8 py-3 bg-orange-500 rounded-md hover:bg-orange-600 transition-colors text-black font-bold duration-300">
-                Contact sales
-              </button>
+              <div className="flex justify-center space-x-4">
+                <button className="px-8 py-3 bg-orange-500 text-gray-900 rounded-md font-bold hover:bg-orange-600 transition-colors duration-300">
+                  Get started
+                </button>
+                <button className="px-8 py-3 bg-orange-500 rounded-md hover:bg-orange-600 transition-colors text-black font-bold duration-300">
+                  Contact sales
+                </button>
               </div>
-              </div>
+            </div>
           </main>
         </div>
-        
       </div>
 
       {/* Rest of the content with solid background */}
@@ -108,7 +108,11 @@ function Home() {
 
         <CrystalPartnershipsGrid />
 
-        <div className="p-10 bg-[#111827]">
+        <div className="bg-gradient-to-b from-gray-90 to-black">
+          <Carousel />
+        </div>
+
+        <div className="p-10 bg-gradient-to-b from-black to-gray-900">
           <CTASection />
         </div>
 
