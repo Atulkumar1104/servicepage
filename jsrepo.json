@@ -1,0 +1,12 @@
+{
+	"$schema": "https://unpkg.com/jsrepo@1.26.6/schemas/project-config.json",
+	"repos": [
+		"github/davidhdev/react-bits",
+		"github/davidhdev/react-bits"
+	],
+	"includeTests": false,
+	"watermark": true,
+	"paths": {
+		"*": "./src/components"
+	}
+}

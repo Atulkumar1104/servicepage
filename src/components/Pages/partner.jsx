@@ -21,7 +21,7 @@ const GlassCard = ({ icon: Icon, title, description, gradient }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className={`absolute inset-0 opacity-25 ${gradient}`} />
-      <div className="relative p-6 bg-black bg-opacity-20 h-full backdrop-blur-md border border-gray-800/20">
+      <div className="relative p-6 bg-gray-800 h-full backdrop-blur-md border border-gray-800">
         <div
           className={`flex items-center mb-6 transition-all duration-300 ${
             isHovered ? "transform scale-110" : ""
@@ -34,7 +34,7 @@ const GlassCard = ({ icon: Icon, title, description, gradient }) => {
           </div>
         </div>
 
-        <h3 className="text-xl font-bold text-white mb-3 transition-all duration-300">
+        <h3 className="text-xl font-bold text-gray-300 mb-3 transition-all duration-300">
           {title}
         </h3>
 

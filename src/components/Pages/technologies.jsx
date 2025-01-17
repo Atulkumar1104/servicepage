@@ -30,6 +30,7 @@ import {
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "./canvasTechnologies";
 
+
 // Define tech categories with their cards and descriptions
 const techCategories = {
   frontend: {
@@ -306,7 +307,7 @@ export default function CombinedTechNav() {
       </div>
       <div className="flex w-full h-96 gap-4">
         {/* Side Navigation Bar */}
-        <nav className="w-72 shadow-lg p-4 rounded-xl bg-gradient-to-b from-black to-gray-900 h-full overflow-y-auto custom-scrollbar">
+        <nav className="w-72 shadow-lg p-4 rounded-xl bg-gradient-to-b from-gray-800 to-gray-950 h-full overflow-y-auto custom-scrollbar">
           <ul className="space-y-2">
             {Object.entries(techCategories).map(([key, category]) => (
               <li key={key}>
@@ -327,7 +328,7 @@ export default function CombinedTechNav() {
         </nav>
 
         {/* Tech Cards Grid with Header */}
-        <div className="flex-1 overflow-y-auto rounded-xl bg-gradient-to-b from-black to-gray-900 bg-red-500">
+        <div className="flex-1 overflow-y-auto rounded-xl bg-gradient-to-b from-gray-800 to-gray-950 bg-red-500">
           <div className="px-8 pt-8 pb-6 max-w-6xl mx-auto">
             <motion.div
               key={selectedCategory}

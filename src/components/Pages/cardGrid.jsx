@@ -20,6 +20,8 @@ import {
   RefreshCw,
   ShoppingCart,
   Users,
+  ArrowLeft, // यह नया add किया
+  ArrowRight, // यह नया add किया
 } from "lucide-react";
 
 const HoverCard = ({ title, description, icon: Icon, imageUrl }) => {
@@ -281,15 +283,17 @@ const CardGrid = () => {
         <div className="flex justify-end mt-8 space-x-3">
           <button
             onClick={handlePrev}
-            className="bg-orange-600 text-white px-4 py-2 rounded-xl hover:bg-orange-700"
+            className="bg-orange-600 text-white p-2 rounded-full hover:bg-orange-700 flex items-center justify-center"
+            aria-label="Previous page"
           >
-            Prev
+            <ArrowLeft className="w-6 h-6" /> 
           </button>
           <button
             onClick={handleNext}
-            className="bg-orange-600 text-white px-4 py-2 rounded-xl hover:bg-orange-700"
+            className="bg-orange-600 text-white p-2 rounded-full hover:bg-orange-700 flex items-center justify-center"
+            aria-label="Next page"
           >
-            Next
+            <ArrowRight className="w-6 h-6" /> 
           </button>
         </div>
       </div>
