@@ -4,7 +4,7 @@ const CTASection = () => {
   return (
     <div className="relative overflow-hidden rounded-3xl">
       {/* Simpler, more sophisticated background */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-blue-900 via-violet-500 to-blue-900" />
+      <div className="absolute inset-0 bg-gradient-to-tr from-blue-900 via-violet-950 to-blue-900" />
 
       {/* Very subtle purple tint overlay */}
       <div className="absolute inset-0 bg-black/15" />

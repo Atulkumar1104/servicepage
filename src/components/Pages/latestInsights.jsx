@@ -213,7 +213,7 @@ const LatestInsights = () => {
                       {item.category}
                     </span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2 group-hover:text-orange-400 transition-colors duration-300">
+                  <h3 className="text-xl font-bold mb-2 text-gray-300 group-hover:text-orange-400 transition-colors duration-300">
                     {item.title}
                   </h3>
                   <p className="text-gray-600">{item.description}</p>

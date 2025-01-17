@@ -15,15 +15,15 @@ const GlassCard = ({ icon: Icon, title, description, gradient }) => {
 
   return (
     <div
-      className={`relative overflow-hidden rounded-2xl backdrop-blur-lg transition-all duration-500 
+      className={`relative overflow-hidden rounded-2xl backdrop-blur-lg transition-all duration-500 h-[380px]
       ${isHovered ? "transform scale-105 shadow-2xl" : "shadow-lg"}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className={`absolute inset-0 opacity-25 ${gradient}`} />
-      <div className="relative p-6 bg-gray-800 h-full backdrop-blur-md border border-gray-800">
+      <div className="relative p-6 bg-gray-800 h-full backdrop-blur-md border border-gray-800 flex flex-col">
         <div
-          className={`flex items-center mb-6 transition-all duration-300 ${
+          className={`flex items-center mb-4 transition-all duration-300 ${
             isHovered ? "transform scale-110" : ""
           }`}
         >
@@ -34,11 +34,13 @@ const GlassCard = ({ icon: Icon, title, description, gradient }) => {
           </div>
         </div>
 
-        <h3 className="text-xl font-bold text-gray-300 mb-3 transition-all duration-300">
+        <h3 className="text-xl font-bold text-gray-300 mb-2 transition-all duration-300">
           {title}
         </h3>
 
-        <p className="text-gray-400 text-sm leading-relaxed">{description}</p>
+        <p className="text-gray-400 text-sm leading-relaxed flex-grow overflow-auto">
+          {description}
+        </p>
 
         <div
           className={`absolute -bottom-6 -right-6 w-24 h-24 rounded-full bg-gradient-to-br ${gradient} opacity-10 blur-2xl`}
@@ -54,7 +56,7 @@ const CrystalPartnershipsGrid = () => {
       icon: Code,
       title: "Experienced ReactJS Developers",
       description:
-        " Our team comprises highly skilled and experienced ReactJS developers with a proven track record of delivering successful projects. We stay up-to-date with the latest ReactJS trends and best practices.",
+        "Our team comprises highly skilled and experienced ReactJS developers with a proven track record of delivering successful projects. We stay up-to-date with the latest ReactJS trends and best practices.",
       gradient: "from-blue-600/80 to-indigo-500/80",
     },
     {
@@ -75,7 +77,7 @@ const CrystalPartnershipsGrid = () => {
       icon: Users,
       title: "Dedicated Project Management",
       description:
-        "Each project is assigned a dedicated project manager as your single point of contact. They ensure clear communication, manage timelines and budgets, and keep you informed of progress throughout the development lifecycle.  ",
+        "Each project is assigned a dedicated project manager as your single point of contact. They ensure clear communication, manage timelines and budgets, and keep you informed of progress throughout the development lifecycle.",
       gradient: "from-orange-600/80 to-red-500/80",
     },
     {
