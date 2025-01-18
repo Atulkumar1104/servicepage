@@ -139,7 +139,7 @@ const IndustryInsights = () => {
   };
 
   return (
-    <div className="relative bg-gradient-to-b from-[#111827] to-black mx-auto max-w-7xl py-16 sm:py-18">
+    <div className="relative mx-auto max-w-7xl py-16 sm:py-18">
       {/* Heading with precise styling */}
       <motion.h2
         className="text-4xl sm:text-4xl font-bold text-center mb-4 text-white"

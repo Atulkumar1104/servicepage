@@ -1,4 +1,5 @@
 import React from "react";
+import InternalNavbar from "../internalNavBar";
 import GitHubActionsClone from "../Pages/cloneGithub";
 import CardGrid from "../Pages/cardGrid";
 import AIServicesSection from "../Pages/4section";
@@ -12,6 +13,8 @@ import LatestInsights from "../Pages/latestInsights";
 import FAQSection from "../Pages/faqSection";
 import Hyperspeed from "../Backgrounds/Hyperspeed/Hyperspeed";
 import Carousel from "../Pages/featuredProjects";
+import ContactSection from "../Pages/contactUs";
+import CardSpotlightDemo from "../Pages/weserve/mainPage";
 
 function Home() {
   const effectOptions = {
@@ -53,7 +56,10 @@ function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black  w-full">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black w-full">
+      {/* Add Internal Navigation Bar */}
+      <InternalNavbar />
+
       {/* Hero Section with Animation */}
       <div className="relative h-screen">
         {/* Animation Container */}
@@ -62,10 +68,10 @@ function Home() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative  z-10 h-full">
+        <div className="relative z-10 h-full">
           <main className="px-6 py-40 max-w-6xl mx-auto text-center">
             {/* Added backdrop-blur and background for better text readability */}
-            <div className="backdrop-blur-[1.5px] bg-gray/30 p-8 -mt-10 rounded-lg">
+            <div className="backdrop-blur-[1.5px] bg-gray-900/30 p-8 -mt-10 rounded-lg">
               <h1 className="text-5xl font-bold mt-8 leading-tight mb-6 text-white drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
                 ReactJS Development Company: Build Modern, High-Performance Web
                 Applications
@@ -98,33 +104,56 @@ function Home() {
 
       {/* Rest of the content with solid background */}
       <div className="bg-gradient-to-b from-gray-900 to-black">
-        <GitHubActionsClone />
-        <CardGrid />
-        <ReactBenefitsSection />
+        <div>
+          <GitHubActionsClone />
+        </div>
 
-        <div className="space-y-8 sm:space-y-12 md:space-y-16">
+        <div id="services">
+          <CardGrid />
+        </div>
+
+        <div>
+          <ReactBenefitsSection />
+        </div>
+
+        <div id="process" className="space-y-8 sm:space-y-12 md:space-y-16">
           <IntegratedStickyScroll />
         </div>
 
-        <CrystalPartnershipsGrid />
+        <div id="why-us">
+          <CrystalPartnershipsGrid />
+        </div>
 
         <div className="bg-gradient-to-b from-gray-90 to-black">
           <Carousel />
         </div>
 
-        <div className="p-10 bg-gradient-to-b from-black to-gray-900">
+        <div className="bg-gradient-to-b from-black to-gray-900">
+          <CardSpotlightDemo />
+        </div>
+
+        <div className="p-10 bg-gradient-to-b from-gray-900 to-black">
           <CTASection />
         </div>
 
-        <div className="bg-gradient-to-b from-[#111827] to-black">
+        <div id="industries" className="bg-gradient-to-b from-black to-gray-900">
           <IndustryInsights />
         </div>
 
-        <CombinedTechNav />
-        <LatestInsights />
+        <div id="technology">
+          <CombinedTechNav />
+        </div>
+
+        <div>
+          <LatestInsights />
+        </div>
 
         <div className="-m-1">
           <FAQSection />
+        </div>
+
+        <div id="contact">
+          <ContactSection />
         </div>
       </div>
     </div>

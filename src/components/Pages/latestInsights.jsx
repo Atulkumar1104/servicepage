@@ -141,7 +141,7 @@ const LatestInsights = () => {
   };
 
   return (
-    <div className="w-full mx-auto max-w-full  bg-gradient-to-b from-gray-900 to-black">
+    <div className="w-full mx-auto max-w-full  bg-gradient-to-b from-black to-gray-900">
       <div className="container mx-auto px-4 py-16 lg:py-24">
         <div className="max-w-[1400px] mx-auto">
           {/* Header Section */}

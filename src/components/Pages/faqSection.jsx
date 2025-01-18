@@ -122,7 +122,7 @@ const FAQSection = () => {
   const rightColumn = faqData.slice(half);
 
   return (
-    <div className="relative mx-auto max-w-full bg-gradient-to-b from-black to-gray-900  bg-[#1c1e24] py-12">
+    <div className="relative mx-auto max-w-full bg-gradient-to-b from-gray-900 to-black  bg-[#1c1e24] py-12">
       {/* Background gradients */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-orange-500/20 rounded-full mix-blend-multiply filter blur-3xl" />

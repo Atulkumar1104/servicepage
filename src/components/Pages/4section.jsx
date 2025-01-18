@@ -86,27 +86,19 @@ const ReactBenefitsSection = () => {
   return (
     <div className="bg-gradient-to-b from-gray-950 to-gray-900 min-h-screen text-white px-6 py-12">
       {/* Header section */}
-      <div className="text-center mb-16">
+      <div className="text-center">
         <h1 className="text-4xl md:text-5xl font-bold max-w-4xl mx-auto leading-tight">
           Is ReactJS Right for Your Project?
         </h1>
       </div>
-
-      {/* Services grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-        {displayedServices.map((service, index) => (
-          <BenefitCard key={index} service={service} />
-        ))}
-      </div>
-
       {/* Navigation buttons */}
       {totalPages > 1 && (
-        <div className="flex justify-end mt-8 space-x-4">
+        <div className="flex justify-center ml-[1180px] mb-7 mt-8 space-x-4">
           <button
             onClick={() =>
               setCurrentPage((prev) => (prev > 0 ? prev - 1 : prev))
             }
-            className="p-2 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors duration-300 disabled:opacity-50"
+            className="p-2 bg-orange-600 rounded-lg hover:bg-orange-700 transition-colors duration-300 disabled:opacity-50"
             disabled={currentPage === 0}
           >
             <ChevronLeft className="w-6 h-6" />
@@ -117,13 +109,19 @@ const ReactBenefitsSection = () => {
                 prev < totalPages - 1 ? prev + 1 : prev
               )
             }
-            className="p-2 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors duration-300 disabled:opacity-50"
+            className="p-2 bg-orange-600 rounded-lg hover:bg-orange-700 transition-colors duration-300 disabled:opacity-50"
             disabled={currentPage === totalPages - 1}
           >
             <ChevronRight className="w-6 h-6" />
           </button>
         </div>
       )}
+      {/* Services grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+        {displayedServices.map((service, index) => (
+          <BenefitCard key={index} service={service} />
+        ))}
+      </div>
     </div>
   );
 };

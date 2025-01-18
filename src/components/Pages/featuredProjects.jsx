@@ -222,7 +222,7 @@ const Carousel = ({ items = [] }) => {
       <div className="max-w-[1300px] mx-auto px-4 p-20">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between -mt-10 -mb-7 gap-8">
           <h2 className="text-4xl md:text-5xl  lg:text-5xl font-bold text-gray-300 md:max-w-2xl">
-            React JS Projects
+            Featured Projects
           </h2>
 
           <p className="text-lg md:text-[20px] text-gray-400 md:max-w-xl">
