@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "../Header/Header";
 import InternalNavbar from "../internalNavBar";
 import GitHubActionsClone from "../Pages/cloneGithub";
 import CardGrid from "../Pages/cardGrid";
@@ -57,11 +58,8 @@ function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black w-full">
-      {/* Add Internal Navigation Bar */}
-      <InternalNavbar />
-
       {/* Hero Section with Animation */}
-      <div className="relative h-screen">
+      <div className="relative h-screen hero-section">
         {/* Animation Container */}
         <div className="absolute inset-0">
           <Hyperspeed effectOptions={effectOptions} />
@@ -70,7 +68,6 @@ function Home() {
         {/* Hero Content */}
         <div className="relative z-10 h-full">
           <main className="px-6 py-40 max-w-6xl mx-auto text-center">
-            {/* Added backdrop-blur and background for better text readability */}
             <div className="backdrop-blur-[1.5px] bg-gray-900/30 p-8 -mt-10 rounded-lg">
               <h1 className="text-5xl font-bold mt-8 leading-tight mb-6 text-white drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
                 ReactJS Development Company: Build Modern, High-Performance Web
@@ -102,60 +99,71 @@ function Home() {
         </div>
       </div>
 
-      {/* Rest of the content with solid background */}
+      {/* Internal Navbar */}
+      <InternalNavbar />
+
+      {/* Content Sections */}
       <div className="bg-gradient-to-b from-gray-900 to-black">
         <div>
           <GitHubActionsClone />
         </div>
 
-        <div id="services">
+        {/* Services Section */}
+        <section id="services" className="scroll-mt-36 min-h-screen">
           <CardGrid />
-        </div>
-
+          <ReactBenefitsSection />
+        </section>
         <div>
           <ReactBenefitsSection />
         </div>
 
-        <div id="process" className="space-y-8 sm:space-y-12 md:space-y-16">
+        {/* Process Section */}
+        <section id="process" className="scroll-mt-36 min-h-screen">
           <IntegratedStickyScroll />
-        </div>
-
-        <div id="why-us">
+        </section>
+        {/* Why Us Section */}
+       <section 
+          id="why-us" 
+          className="scroll-mt-36 min-h-screen"
+        >
           <CrystalPartnershipsGrid />
-        </div>
+          <div className="bg-gradient-to-b from-gray-90 to-black">
+            <Carousel />
+          </div>
+          <div className="bg-gradient-to-b from-black to-gray-900">
+            <CardSpotlightDemo />
+          </div>
+          <div className="p-10 bg-gradient-to-b from-gray-900 to-black">
+            <CTASection />
+          </div>
+        </section>
 
-        <div className="bg-gradient-to-b from-gray-90 to-black">
-          <Carousel />
-        </div>
-
-        <div className="bg-gradient-to-b from-black to-gray-900">
-          <CardSpotlightDemo />
-        </div>
-
-        <div className="p-10 bg-gradient-to-b from-gray-900 to-black">
-          <CTASection />
-        </div>
-
-        <div id="industries" className="bg-gradient-to-b from-black to-gray-900">
+        {/* Industries Section */}
+        <section 
+          id="industries" 
+          className="scroll-mt-36 min-h-screen"
+        >
           <IndustryInsights />
-        </div>
+        </section>
 
-        <div id="technology">
+        {/* Technology Section */}
+        <section 
+          id="technology" 
+          className="scroll-mt-36 min-h-screen"
+        >
           <CombinedTechNav />
-        </div>
-
-        <div>
           <LatestInsights />
-        </div>
-
-        <div className="-m-1">
           <FAQSection />
-        </div>
+        </section>
 
-        <div id="contact">
+        {/* Contact Section */}
+        <section 
+          id="contact" 
+          className="scroll-mt-36 min-h-screen"
+        >
           <ContactSection />
-        </div>
-      </div>
+        </section>        </div>
+     
     </div>
   );
 }

@@ -256,7 +256,7 @@ const CardGrid = () => {
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black py-8 sm:py-12 md:py-16 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
-        <div className="text-center mb-8 sm:mb-10 md:mb-14">
+        <div className="text-center mb-8 sm:mb-10 md:mb-6">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
             Our ReactJS Development Services
           </h1>
@@ -265,7 +265,23 @@ const CardGrid = () => {
             meet all your needs
           </p>
         </div>
-
+        {/* Navigation Buttons */}
+        <div className="flex justify-end mb-5 space-x-3">
+          <button
+            onClick={handlePrev}
+            className="bg-orange-600 text-white p-2 rounded-full hover:bg-orange-700 flex items-center justify-center"
+            aria-label="Previous page"
+          >
+            <ArrowLeft className="w-6 h-6" />
+          </button>
+          <button
+            onClick={handleNext}
+            className="bg-orange-600 text-white p-2 rounded-full hover:bg-orange-700 flex items-center justify-center"
+            aria-label="Next page"
+          >
+            <ArrowRight className="w-6 h-6" />
+          </button>
+        </div>
         {/* Card Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
           {visibleCards.map((card, index) => (
@@ -277,24 +293,6 @@ const CardGrid = () => {
               imageUrl={card.imageUrl}
             />
           ))}
-        </div>
-
-        {/* Navigation Buttons */}
-        <div className="flex justify-end mt-8 space-x-3">
-          <button
-            onClick={handlePrev}
-            className="bg-orange-600 text-white p-2 rounded-full hover:bg-orange-700 flex items-center justify-center"
-            aria-label="Previous page"
-          >
-            <ArrowLeft className="w-6 h-6" /> 
-          </button>
-          <button
-            onClick={handleNext}
-            className="bg-orange-600 text-white p-2 rounded-full hover:bg-orange-700 flex items-center justify-center"
-            aria-label="Next page"
-          >
-            <ArrowRight className="w-6 h-6" /> 
-          </button>
         </div>
       </div>
     </div>
