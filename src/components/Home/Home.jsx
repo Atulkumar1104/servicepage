@@ -68,7 +68,7 @@ function Home() {
         {/* Hero Content */}
         <div className="relative z-10 h-full">
           <main className="px-6 py-40 max-w-6xl mx-auto text-center">
-            <div className="backdrop-blur-[1.5px] bg-gray-900/30 p-8 -mt-10 rounded-lg">
+            <div className="backdrop-blur-[0.5px] bg-gray-900/30 p-8 -mt-10 rounded-lg">
               <h1 className="text-5xl font-bold mt-8 leading-tight mb-6 text-white drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
                 ReactJS Development Company: Build Modern, High-Performance Web
                 Applications
@@ -109,7 +109,7 @@ function Home() {
         </div>
 
         {/* Services Section */}
-        <section id="services" className="scroll-mt-36 min-h-screen">
+        <section id="services" className="scroll-mt-36 ">
           <CardGrid />
           <ReactBenefitsSection />
         </section>
@@ -118,13 +118,13 @@ function Home() {
         </div>
 
         {/* Process Section */}
-        <section id="process" className="scroll-mt-36 min-h-screen">
+        <section id="process" className="scroll-mt-36 ">
           <IntegratedStickyScroll />
         </section>
         {/* Why Us Section */}
        <section 
           id="why-us" 
-          className="scroll-mt-36 min-h-screen"
+          className="scroll-mt-36 "
         >
           <CrystalPartnershipsGrid />
           <div className="bg-gradient-to-b from-gray-90 to-black">
@@ -141,7 +141,7 @@ function Home() {
         {/* Industries Section */}
         <section 
           id="industries" 
-          className="scroll-mt-36 min-h-screen"
+          className="scroll-mt-36 "
         >
           <IndustryInsights />
         </section>
@@ -149,7 +149,7 @@ function Home() {
         {/* Technology Section */}
         <section 
           id="technology" 
-          className="scroll-mt-36 min-h-screen"
+          className="scroll-mt-36 "
         >
           <CombinedTechNav />
           <LatestInsights />
@@ -159,7 +159,7 @@ function Home() {
         {/* Contact Section */}
         <section 
           id="contact" 
-          className="scroll-mt-36 min-h-screen"
+          className="scroll-mt-36"
         >
           <ContactSection />
         </section>        </div>
